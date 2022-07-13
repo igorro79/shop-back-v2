@@ -20,14 +20,14 @@ app.use("/", test);
 
 async function start() {
   try {
-    await mongoose
-      .connect(process.env.MONGO_URL)
-      .then(console.log("database connect succesfully"))
-      .catch((error) => {
-        console.log(error);
-        console.log(error.message);
-        process.exit(1);
-      });
+    // await mongoose
+    //   .connect(process.env.MONGO_URL)
+    //   .then(console.log("database connect succesfully"))
+    //   .catch((error) => {
+    //     console.log(error);
+    //     console.log(error.message);
+    //     process.exit(1);
+    //   });
 
     app.listen(port, () => {
       console.log(`Server running. Use our API on port: ${port}`);
